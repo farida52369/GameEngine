@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.engine.MainController">
+   <ImageView disable="true" fitHeight="518.0" fitWidth="610.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+      <Image url="@../images_games/background.png" />
+   </ImageView>
+   <Label contentDisplay="TOP" graphicTextGap="0.0" layoutX="22.0" layoutY="14.0" prefHeight="111.0" prefWidth="308.0" style="-fx-padding: 0px 0px 20px 0px;" text="Tweety Games" textOverrun="CLIP">
+      <font>
+         <Font name="Kinnari Bold" size="48.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="GAUSSIAN" height="30.0" radius="14.5" spread="0.4" width="30.0">
+            <color>
+               <Color red="0.46475693583488464" green="0.75" blue="0.4270833432674408" />
+            </color>
+         </DropShadow>
+      </effect>
+      <opaqueInsets>
+         <Insets top="-51.0" />
+      </opaqueInsets>
+   </Label>
+   <Button fx:id="chessButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="189.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#playChess" prefHeight="122.0" prefWidth="119.0" text="chess" textOverrun="CENTER_ELLIPSIS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <font>
+         <Font size="0.1" />
+      </font>
+      <graphic>
+         <ImageView fitHeight="126.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images_games/chess.jpeg" />
+            <effect>
+               <DropShadow />
+            </effect>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="checkersButton" contentDisplay="GRAPHIC_ONLY" layoutX="198.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#playCheckers" prefHeight="57.0" prefWidth="102.0" text="checkers">
+      <graphic>
+         <ImageView fitHeight="93.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images_games/checkers.jpg" />
+            <effect>
+               <DropShadow />
+            </effect>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+      </graphic>
+      <font>
+         <Font size="0.1" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button contentDisplay="GRAPHIC_ONLY" layoutX="45.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#playXO" prefHeight="72.0" prefWidth="81.0" text="xo" fx:id="xoButton">
+      <graphic>
+         <ImageView fitHeight="85.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images_games/xo.png" />
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+               <DropShadow />
+            </effect>
+         </ImageView>
+      </graphic>
+      <font>
+         <Font size="0.1" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="connect4Button" contentDisplay="GRAPHIC_ONLY" layoutX="372.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#playConnect4" prefHeight="70.0" prefWidth="101.0" text="connect4">
+      <graphic>
+         <ImageView fitHeight="80.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+            <effect>
+               <DropShadow />
+            </effect>
+            <Image url="@../images_games/connect4.jpeg" />
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+      </graphic>
+      <font>
+         <Font size="0.1" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>
